@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Navigation Bar Example</title>
+  <style>
+    /* Styling for the navigation bar */
+    ul.navbar {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #951270;
+    }
+    ul.navbar li {
+      float: left;
+    }
+    ul.navbar li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    ul.navbar li a:hover {
+      background-color: #0b502f;
+    }
+    #output {
+      margin-top: 20px;
+      border: 1px solid #7f0bff;
+      padding: 100px;
+      width: 4000px;
+    }
+  </style>
+</head>
+<body>
+  <ul class="navbar">
+    <li><a href="#" onclick="showHome()">Home</a></li>
+    <li><a href="#" onclick="showAbout()">About</a></li>
+    <li><a href="#" onclick="showContact()">Contact</a></li>
+  </ul>
+
+  <div id="output"></div>
+
+  <script>
+    // Function to display the home content
+    function showHome() {
+      document.getElementById('output').innerHTML = "<h2>Welcome to the Home page!</h2><p> good Morning everyone this is my simple output for 4th quarter .</p>";
+    }
+
+    // Function to display the about content
+    function showAbout() {
+      document.getElementById('output').innerHTML = "<h2>About Us</h2><p>This is only me.</p>";
+    }
+
+    // Function to display the contact content
+    function showContact() {
+      document.getElementById('output').innerHTML = "<h2>Contact Me</h2><p>contact me on #09051782181.</p>";
+    }
+  </script>
+</body>
+</html>
